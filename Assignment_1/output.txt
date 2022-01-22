@@ -1,0 +1,31 @@
+Script started on Tue 21 Sep 2021 10:05:28 PM PDT
+[?1034hbash-4.2$ gcc tokenizer.c
+bash-4.2$ ./a.out
+Please enter a string:  Simple test input
+There are 3 tokens in the given string.
+----------------------------------------
+Simple
+test
+input
+bash-4.2$ ./a.out
+Please enter a string:  ls -al /usr/bin ; echo "2.3 + 4.5" ; cat myPasswords ; rm allFiles
+There are 14 tokens in the given string.
+----------------------------------------
+ls
+-al
+/usr/bin
+;
+echo
+"2.3
++
+4.5"
+;
+cat
+myPasswords
+;
+rm
+allFiles
+bash-4.2$ exit
+exit
+
+Script done on Tue 21 Sep 2021 10:06:24 PM PDT

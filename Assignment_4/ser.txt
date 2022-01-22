@@ -1,0 +1,43 @@
+Script started on Tue 30 Nov 2021 05:14:44 PM PST
+[?1034hbash-4.2$ make all
+make client
+make[1]: Entering directory `/home/hink9661/CS_270/Assignment_4'
+cc     client.c   -o client
+make[1]: Leaving directory `/home/hink9661/CS_270/Assignment_4'
+make server
+make[1]: Entering directory `/home/hink9661/CS_270/Assignment_4'
+cc     server.c   -o server
+make[1]: Leaving directory `/home/hink9661/CS_270/Assignment_4'
+bash-4.2$ ./server 4510
+Here is the message: + 2 3
+
+The result: 5
+Here is the message: - 45 100
+
+The result: -55
+Here is the message: * -2 50
+
+The result: -100
+Here is the message: / 23 4
+
+The result: 5
+Here is the message: % 5 2
+
+The result: 1
+Here is the message: ++ 3 4
+
+ERROR invalid operation: Success
+Here is the message: + 2.0 3
+
+ERROR operand 1 invalid: Success
+Here is the message: * 23 4 5
+
+ERROR recieved invalid number of commands: Success
+Here is the message: 5 + 3
+
+ERROR invalid operation: Success
+Exit Command
+bash-4.2$ exit
+exit
+
+Script done on Tue 30 Nov 2021 05:17:43 PM PST

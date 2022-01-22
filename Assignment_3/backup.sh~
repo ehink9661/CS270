@@ -1,0 +1,25 @@
+#!/bin/bash
+# Ethan Hinkle - CS 270
+# rmvunderscore.sh
+
+# checks working directory for .backup with directory path
+path="/.backup"
+printf "${PWD}${path}"
+if [[ ! -d .backup ]]
+then
+    printf "making direcotry"
+    #mkdir .backup
+fi
+# loops through all files and directories in the current directory
+for file in *
+do
+    if [[ -f .backup/$file ]] || [[ -d .backup/$file ]]
+    then
+	printf "remove $file "
+	#rm -r .backup/$file
+    fi
+    #printf "copy $file "
+    #cp -r $file .backup/$file
+done
+
+exit 0

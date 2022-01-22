@@ -1,0 +1,60 @@
+Script started on Fri 29 Oct 2021 01:53:29 PM PDT
+bash-4.2$ ls -a
+.  ..  backup.sh  backup.sh~  hello_world.c  hello_world.cpp  linenum.sh  linenum.sh~  output.txt  rmvunderscore.sh  rmvunderscore.sh~	te_st.txt
+bash-4.2$ cat te_st.txt
+123 abc
+abc 123
+This text file is
+to demonstrate the
+addition and removal
+of line numbers.
+bash-4.2$ bash linenum.sh
+Enter the file you wish to edit:
+te_st.txt
+Do you wish to add or remove line numbers? (1=add, 0=remove):
+1
+bash-4.2$ cat te_st.txt
+     1	123 abc
+     2	abc 123
+     3	This text file is
+     4	to demonstrate the
+     5	addition and removal
+     6	of line numbers.
+bash-4.2$ bash linenum.sh
+Enter the file you wish to edit:
+te_st.txt
+Do you wish to add or remove line numbers? (1=add, 0=remove):
+0
+bash-4.2$ cat te_st.txt
+123 abc
+abc 123
+This text file is
+to demonstrate the
+addition and removal
+of line numbers.
+bash-4.2$ gcc hello_world.c
+bash-4.2$ ./a.out
+Hello, World!
+bash-4.2$ bash rmvunderscore.sh
+bash-4.2$ ls -a
+.  ..  a.out  backup.sh  backup.sh~  helloworld.c  helloworld.cpp  linenum.sh  linenum.sh~  output.txt	rmvunderscore.sh  rmvunderscore.sh~  te_st.txt
+bash-4.2$ gcc helloworld.c
+bash-4.2$ ./a.out
+Hello, World!
+bash-4.2$ bash backup.sh
+bash-4.2$ ls -a
+.  ..  a.out  .backup  backup.sh  backup.sh~  helloworld.c  helloworld.cpp  linenum.sh	linenum.sh~  output.txt  rmvunderscore.sh  rmvunderscore.sh~  te_st.txt
+bash-4.2$ cd .backup
+bash-4.2$ ls -a
+.  ..  a.out  backup.sh  backup.sh~  helloworld.c  helloworld.cpp  linenum.sh  linenum.sh~  output.txt	rmvunderscore.sh  rmvunderscore.sh~  te_st.txt
+bash-4.2$ cat te_st.txt
+123 abc
+abc 123
+This text file is
+to demonstrate the
+addition and removal
+of line numbers.
+bash-4.2$ exit
+exit
+
+Script done on Fri 29 Oct 2021 01:57:36 PM PDT

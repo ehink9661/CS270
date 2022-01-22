@@ -1,0 +1,44 @@
+Script started on Tue 30 Nov 2021 05:15:11 PM PST
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: + 2 3
+The result of the operation: 5
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: - 45 100
+The result of the operation: -55
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: * -2 50
+The result of the operation: -100
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: / 23 4
+The result of the operation: 5
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: % 5 2
+The result of the operation: 1
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: ++ 3 4
+Invalid operator recieved
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: + 2.0 3
+Operand 1 Invalid
+
+bash-4.2$ ./client localhost 4510
+Enter the operator followed by the two operands: * 23 4 5
+Invalid number of commands recieved
+
+bash-4.2$ ./client localhost 4520
+Enter the operator followed by the two operands: 5 + 3
+Invalid operator recieved
+
+bash-4.2$ ./client localhost 4520
+Enter the operator followed by the two operands: exit
+
+bash-4.2$ exit
+exit
+
+Script done on Tue 30 Nov 2021 05:17:41 PM PST

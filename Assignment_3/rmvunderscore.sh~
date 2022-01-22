@@ -1,0 +1,21 @@
+#!/bin/bash
+# Ethan Hinkle - CS 270
+# rmvunderscore.sh
+
+# get all files in the current directory
+for file in *
+do
+printf "one"
+# checks if the file is a c/c++ file via wildcard
+    if ( [[ "$file" == *.c ]] || [[ "$file" == *.cpp ]] )
+    then
+	printf "$file "
+	if [[ ! -f ${file//_/} ]]
+	then
+	    printf "god $file"
+	    #mv $file ${file//_/}
+	fi
+    fi
+done
+exit 0
+	    
